@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Hello sam toh and his jquery!</title></head>
+  <style>
+    #change_me {
+    	position: absolute;
+    	top: 100px;
+    	left: 40px;
+    	font: 24px arial;
+    }
+    #move_up #color #disappear #move_down #reset #move_left #move_right {
+        padding: 1px;
+    }
+  </style>
+  <script src="../script/jquery-2.1.4.js"></script>
+  <body>
+  	  <!DOCTYPE html>
+<html>
+  <head><title>Hello sam toh and his jquery!</title></head>
+  <style>
+    #change_me {
+      position: absolute;
+      top:  250px;
+      left: 100px;
+      font: 24px arial;
+    }
+    #move_up #color #disappear #move_down #reset #move_left #move_right {
+        padding: 1px;
+    }
+  </style>
+  <script src="../script/jquery-2.1.4.js"></script>
+  <body>
+      <p>Feel the <strong>POWER</strong> of jquery! 
+      <p>Click on each magical button below and see what they can do! -Samuel Toh <em>2015</em></p>
+      <button id="move_up">MoveUp</button>
+      <button id="move_down">Move Down!</button>
+      <button id="move_left">Move left</button>
+      <button id="move_right">Move right</button>
+      <button id="color">Change Color</button>
+      <button id="disappear">Disappear poof! / Reappear wow!</button>
+      <button id="reset">Reset!</button>
+      <div id="change_me">Make me do stuff!</div>
+      <script>
+        $(document).ready(function() {
+          $("#move_up").click(function() {
+            var newTop = $("#change_me").offset().top - 30;
+            $("#change_me").animate({/*pixel to position e dom element=*/top : newTop}, /*speed to destination=*/250);
+          });
+            $("#move_down").click(function() {
+              var newTop = $("#change_me").offset().top + 30;
+                $("#change_me").animate({/*pixel to position e dom element=*/top: newTop}, /*speed to destination=*/250);
+            });
+            $("#reset").click(function(){
+                $("#change_me").animate({top: 250, left: 100}, 2000);
+                $("#change_me").css("color", "black");
+            });
+            $("#move_left").click(function() {
+              var newLeft = $("#change_me").offset().left - 30;
+              $("#change_me").animate({left: newLeft}, 250);
+            });
+            $("#move_right").click(function() {
+                var newLeft = $("#change_me").offset().left + 30;
+                $("#change_me").animate({left: newLeft}, 250);
+            });
+            $("#color").click(function(){
+                $("#change_me").css("color", "purple");
+            });
+            $("#disappear").click(function() {
+              $("#change_me").toggle("slow");
+            })
+        });
+      </script>
+  </body>
+</html>
