@@ -1,0 +1,26 @@
+#container{
+    height: 730px;
+    width: 1000px;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-top: 10px; 
+}
+
+.row{
+	float: left;
+    height: 190px;
+    width: 970px;
+    border: 1px solid black;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-left:20px;
+}
+
+.card{
+	float: left;
+	position: relative;
+	height: 200px;
+    width: 130px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
