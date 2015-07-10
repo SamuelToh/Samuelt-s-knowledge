@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bunyip multi-tenancy demo</title>
+    <script src="./jquery-2.1.1.js"></script>
+    <script src="./jqtree/tree.jquery.js"></script>
+    <script src="./buttonFunctions.js"></script>
+    <link rel="stylesheet" href="./main.css">
+  </head>
+  <body>
+  	<header></header>
+  	<script src="./tabs.js"></script>
+  	<section id="demoCategories">
+      <h1><span><img src="./images/testDrive.png"/>Test drive SV.Net multi-tenancy features</span></h1>
+  	  <ul class="tabs">
+  	  	<li><a href="#subscriberTab">Create Subscriber</a></li>
+  	  	<li><a href="#catalogTab">Deploy Catalog (Offers)</a></li>
+  	  	<li><a href="#orderTab">Order Capture</a></li>
+  	  	<li><a href="#billingTab">Billing</a></li>
+  	  	<li><a href="#accountBalanceTab">Account Balance</a></li>
+  	  	<li><a href="#accountDetailsTab">Account Details</a></li>
+  	  </ul>
+  	  <div class="clr"></div> <!-- block off all elements in this div -->
+      <section class="demoStepContainer">
+        <article id="subscriberTab">
+            <section id="AscendonSteps">
+	          <blockquote>
+	            <q>As an Ascendon Tenant<br>
+	            I would like to create subscribers account into the Singleview system<br>
+	            So that I can sell them products and then bill them for revenue.</q>
+	          </blockquote>
+	          <div class="stepContainer">
+		          <div class="StepsPanel">
+	                <h2>Create Subscriber</h2>
+		            <div class="row">
+		              <div class="column">
+		              	<p><img src="./images/createTenant.png"/></p>
+		              	<p><button type="button" class="btn" id="demoSubscriberBtn">Demonstrate</button></p>
+		              </div>
+		              <div class="column item">
+		              	<p class="labelDescription">Associated Tenant:</p>
+		              	<p class="labelDescription">Subscriber Name: </p>
+		              	<p class="labelDescription">Subscriber Type: </p>
+		              	<p class="labelDescription">Account Number: </p>
+		              </div>
+		              <div class="column item">
+		              	<p><input type="text" class="textboxes" id="TenantName" required="true" /></p>
+		              	<p><input type="text" class="textboxes" id="SubscriberName" required="true"/> </p>
+		              	<p><input type="text" class="textboxes" readonly="true" value="Residential"/> </p>
+		              	<p><input type="text" class="textboxes demoSubAccountName" readonly="true" value="??? - To be generated"/> </p>
+		              </div>
+		            </div>
+		          </div>
+		       </div>
+		       <div class="svResponseContainer">
+		           <h2>Singleview Response</h2>
+		           <div>
+    		           <textarea id="svSubscriberTxtArea" rows="30" cols="100"></textarea>
+    		       </div>
+		       </div>
+            </section>
+        </article>
+        <article id="catalogTab">
+            <section id="AscendonSteps">
+	          <blockquote>
+	            <q>As an Ascendon Tenanted Operator<br>
+	            I would like to have the ability to deploy my product catalog into the Singleview system<br>
+	            So that I can sell services to my subscribers.</q>
+	          </blockquote>
+	          <div class="stepContainer">
+		          <div class="StepsPanel">
+	                <h2>Deploy Catalog Configuration</h2>
+		            <div class="row">
+		              <div class="column">
+		              	<p><img src="./images/smallerTenant.png"></img><span id="associatedTenantValue"> Tenant: <input type="text" class="textboxes demoTenantName" required="true" /></span></p>
+		              	<p><div id="productCatalogTree"></div></p>
+		              	<p><button type="button" class="btn" id="demoCatalogBtn">Demonstrate</button></p>
+		              </div>
+		            </div>
+		          </div>
+		       </div>
+		       <div class="svResponseContainer">
+		           <h2>Singleview Response</h2>
+		           <div>
+    		           <textarea id="svCatalogTxtArea" rows="30" cols="100"></textarea>
+    		       </div>
+		       </div>
+            </section>
+        </article>
+        <article id="orderTab">
+            <section id="AscendonSteps">
+	          <blockquote>
+	            <q>As an Ascendon Tenanted Operator<br>
+	            I would like to sell and activate my services for my subscribers<br>
+	            So that my subscribers can start using my services.</q>
+	          </blockquote>
+	          <div class="stepContainer">
+		          <div class="StepsPanel">
+	                <h2>Order Capture (Selling Offers)</h2>
+		            <div class="row">
+		              <div class="column">
+		              	<div class="row">
+		              		<div class="column">
+		              			<img src="./images/smallerTenant.png"/>
+		              		</div>
+		              		<div class="column">Tenant:</div>
+                            <div class="column">
+		              		    <input type="text" class="textboxes demoTenantName" required="true" />
+		              		</div>
+		              	</div>
+		              	<div class="row">
+		              		<div class="column">
+		              			<img src="./images/subscriber.png"/>
+		              		</div>
+		              		<div class="column">Subscriber Account:</div>
+                            <div class="column">
+		              		    <input type="text" class="textboxes demoSubAccountName" required="true" />
+		              		</div>
+		              	</div>
+		              	<div class="row">
+		              		<div class="column">
+		              			<img src="./images/serviceItem.png"/>
+		              		</div>
+		              		<div class="column">Unlimited Use Service:</div>
+                            <div class="column">
+		              		    <input type="text" class="textboxes demoService1Name" required="true" />
+		              		</div>
+		              	</div>
+		              	<!--
+		              	<div class="row">
+		              		<div class="column">
+		              			<img src="./images/saverPlan.png"/>
+		              		</div>
+		              		<div class="column">Saver Plan Service:</div>
+                            <div class="column">
+		              		    <input type="text" class="textboxes demoService2Name" required="true" />
+		              		</div>
+		              	</div>
+		                -->
+		              	<div class="row">
+		              		<div class="column">
+		              			<img src="./images/disney.png"/>
+		              		</div>
+		              		<div class="column">Disney Super Cartoons Service:</div>
+                            <div class="column">
+		              		    <input type="text" class="textboxes demoService3Name" required="true" />
+		              		</div>
+		              	</div>
+		              	<br/>
+		              	<h3>Selected Offering Products</h3>
+		              	<div id="selectedOfferingTree"></div>
+		              	<p><button type="button" class="btn" id="demoOrderBtn">Demonstrate</button></p>
+		              </div>
+		            </div>
+		          </div>
+		       </div>
+		       <div class="svResponseContainer">
+		           <h2>Singleview Response</h2>
+		           <div>
+    		           <textarea id="svOrderTxtArea" rows="30" cols="100"></textarea>
+    		       </div>
+    		       <div>
+    		           <strong>Base product instance id:</strong> <input type="text" id="txtBaseProdInstance" readonly="true" value="To be generated."></textarea>
+    		       </div>
+		       </div>
+            </section>
+        </article>
+        <article id="billingTab">
+            <section id="AscendonSteps">
+	          <blockquote>
+	            <q>As an Ascendon Tenanted Operator<br>
+	            I would like have the ability to execute billruns daily<br>
+	            So that I can generate invoices with recurring charges for my subscribers.</q>
+	          </blockquote>
+	          <div class="stepContainer">
+		          <div class="StepsPanel">
+	                <h2>Tenanted Bill Run</h2>
+		            <div class="row">
+		              <div class="column">
+		              	<div class="row">
+		              		<div class="column">
+		              			<img src="./images/smallerTenant.png"/>
+		              		</div>
+		              		<div class="column">Tenant:</div>
+                            <div class="column">
+		              		    <input type="text" class="textboxes demoTenantName" required="true" />
+		              		</div>
+		              	</div>
+		              	<p><button type="button" class="btn" id="demoBillingBtn">Execute Bill Run</button></p>
+		              </div>
+		            </div>
+		          </div>
+		       </div>
+		       <div class="svResponseContainer">
+		           <h2>Singleview Response</h2>
+		           <div>
+    		           <textarea id="svBillTxtArea" rows="30" cols="100"></textarea>
+    		       </div>
+		       </div>
+            </section>
+        </article>
+        <article id="accountBalanceTab">
+            <section id="AscendonSteps">
+	          <blockquote>
+	            <q>As an Ascendon Tenanted operator<br>
+	            I want to be able to enquiry my subscriber's account balances<br>
+	            So that I can answer balance questions raised by my subscribers.</q>
+	          </blockquote>
+	          <div class="stepContainer">
+		          <div class="StepsPanel">
+	                <h2>Account Balance Enquiry</h2>
+	                <div class="row">
+		              		<div class="column">
+		              			<img src="./images/smallerTenant.png"/>
+		              		</div>
+		              		<div class="column">Tenant:</div>
+                            <div class="column">
+		              		    <input type="text" class="textboxes demoTenantName" required="true" />
+		              		</div>
+		              	</div>
+		              	<div class="row">
+		              		<div class="column">
+		              			<img src="./images/subscriber.png"/>
+		              		</div>
+		              		<div class="column">Subscriber Account:</div>
+                            <div class="column">
+		              		    <input type="text" class="textboxes demoSubAccountName" required="true" />
+		              		</div>
+		              	</div>
+		            </div>
+		            <div class="row">
+                        <p><h3>My Account Balance</h3></p>
+		            </div>
+		            <div class="row">
+		              <div class="column">
+		              	<p><img src="./images/strangeCreature.png"/></p>
+		              	<p><button type="button" class="btn" id="demoAccBalanceBtn">Retrieve Balance</button></p>
+		              </div>
+		              <div class="column item">
+		              	<p class="labelDescription">Total:</p>
+		              	<p class="labelDescription">Balance:</p>
+		              	<p class="labelDescription">Past Due: </p>
+		              	<p class="labelDescription">Delinquency amt: </p>
+		              	<p class="labelDescription">Delinquency days: </p>
+		              	<p class="labelDescription">Next invoice due: </p>
+		              </div>
+		              <div class="column item">
+		              	<p><input type="text" class="textboxes" id="FetchedTotal" required="true"/></p>
+		              	<p><input type="text" class="textboxes" id="FetchedBalance" required="true"/></p>
+		              	<p><input type="text" class="textboxes" id="FetchedPastDue" readonly="true"/></p>
+		              	<p><input type="text" class="textboxes" id="FetchedDelinqA" readonly="true"/></p>
+		              	<p><input type="text" class="textboxes" id="FetchedDelinqD" readonly="true"/></p>
+		                <p><input type="text" class="textboxes" id="FetchedNextDue" readonly="true"/></p>
+		              </div>
+		            </div>
+		          </div>
+		       </div>
+		       <div class="svResponseContainer">
+		           <h2>Singleview Response</h2>
+		           <div>
+    		           <textarea id="svAccountBalanceTxtArea" rows="30" cols="100"></textarea>
+    		       </div>
+		       </div>
+            </section>
+        </article>
+        <article id="accountDetailsTab">
+            <section id="AscendonSteps">
+	          <blockquote>
+	            <q>As an Ascendon Tenanted operator<br>
+	            I want to be able to enquiry what my subscriber has bought from me<br>
+	            So that I can explain to my sbuscriber how they would be charged based on the purchased products.</q>
+	          </blockquote>
+	          <div class="stepContainer">
+		          <div class="StepsPanel">
+	                <h2>Account Details Enquiry</h2>
+	                <div class="row">
+		              	<div class="column">
+		              			<img src="./images/smallerTenant.png"/>
+		              		</div>
+		              		<div class="column">Tenant:</div>
+                            <div class="column">
+		              		    <input type="text" class="textboxes demoTenantName" required="true" />
+		              		</div>
+		              	</div>
+		              	<div class="row">
+		              		<div class="column">
+		              			<img src="./images/subscriber.png"/>
+		              		</div>
+		              		<div class="column">Subscriber Account:</div>
+                            <div class="column">
+		              		    <input type="text" class="textboxes demoSubAccountName" required="true" />
+		              		</div>
+		              	</div>
+		            </div>
+                    <div class="row">
+                        <p><button type="button" class="btn" id="demoAccDetailBtn">Retrieve Account Details</button></p>
+		            </div>
+		            <div id="productCatalogTreeInAccDetail"></div>
+		          </div>
+		       </div>
+		       <div class="svResponseContainer">
+		           <h2>Singleview Response</h2>
+		           <div>
+    		           <textarea id="svAccountDetailsTxtArea" rows="30" cols="100"></textarea>
+    		       </div>
+		       </div>
+            </section>
+        </article>
+  	  </section>
+    <footer></footer>
+  </body>
+</html>
