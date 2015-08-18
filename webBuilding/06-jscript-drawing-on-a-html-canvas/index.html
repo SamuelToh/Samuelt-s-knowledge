@@ -1,0 +1,18 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #canvas-wrap { position:relative; width:1800px; height:600px }
+      #canvas-wrap canvas { position:absolute; top:0; left:0; z-index:0 }
+    </style>
+  </head>
+  <body>
+  	<div id="canvas-wrap">
+      <canvas width="1800" height="1000" id="imageview" style="border:5px dotted"></canvas>
+      <script src="drawing.js"></script>
+      <div id="overlay">
+          <div><span style="font-size:60px">Drag your left click to draw around this big canvas!</span></div>
+      </div>
+    </div>
+  </body>
+ </html>
