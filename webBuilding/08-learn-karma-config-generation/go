@@ -1,0 +1,32 @@
+#!/bin/bash
+
+#
+# For more info refer to karma start --help
+#
+
+function startKarma {
+    echo "Note: By default karma will look for karma.conf.js or karma.conf.coffee in the current directory"
+    echo "      The specified configuration can be overrideen by providing more arguments when doing karma start blah blah"
+    karma start my_karma_config.config
+}
+
+function setupKarma {
+    echo "Installing Karma through the package manager npm. Note option -g for GLOBAL is used during installation"
+    npm install -g karma 
+}
+
+function generateKarmaConfig {
+    echo "Generating Karma configuration file. A few questions regarding your proeject will be asked."
+    echo "NOTE!! This is not an automated step. You will have to provide inputs..."
+    karma init YOUR_KARMA_CONFIG.config
+}
+
+if [ "$1" == 'setup' ]; then
+   setupKarma
+elif [ "$1" == 'genconfig' ]; then
+    generateKarmaConfig
+elif [ "$1" == 'start' ]; then
+    startKarma
+else 
+    echo "Unknown command"
+fi
