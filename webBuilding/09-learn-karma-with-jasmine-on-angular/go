@@ -1,0 +1,52 @@
+#!/bin/bash
+
+#
+# check out npm help install on more option information
+#
+
+# Grunt, Yeoman, Bower, generator-angular and other modules
+function install_all_tools {
+    echo "Installing grunt, yeoman (yo) and bower..."
+    npm install -g yo grunt-cli bower
+
+    echo "Installing angular-scafolder"
+    npm install -g generator-angular
+
+    echo "Installing Karma-Jasmine && Karma-Chrome-Launcher"
+    npm install -g karma-jasmine 
+    npm install -g karma-chrome-launcher 
+    npm install grunt-karma karma karma-phantomjs-launcher karma-jasmine jasmine-core phantomjs --save-dev # Only add dependency entries for development env
+
+}
+
+function do_testing {
+    grunt test
+}
+
+function scaffold_angular {
+    echo "Setting up angular templates via Yeoman..."
+    yo angular <<!
+n
+n
+Y
+!
+}
+
+function start_web_server {
+    # To learn more about Grunt check its configuration file at Gruntfile.js 
+    echo "Compiling and starting web server..."
+    grunt serve
+}
+
+if [ "$1" == 'setup' ]; then
+    install_all_tools
+elif [ "$1" == 'scaffold' ]; then
+    scaffold_angular
+elif [ "$1" == 'start' ]; then
+    start_web_server
+elif [ "$1" == 'test' ]; then
+    do_testing
+else
+    echo "Unknown command ->" "$1"
+fi
+
