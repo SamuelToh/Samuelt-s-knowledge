@@ -21,7 +21,10 @@
   <h4 ng-app"myApplicationModule">Map demo</h4>
   <p>
     <div ng-controller="MainCtrl">
-      <ui-gmap-google-map center="map.center" options="options" zoom="map.zoom" model="map_markers" bounds="map.bounds"></ui-gmap-google-map>
+      <ui-gmap-google-map center="map.center" options="options" zoom="map.zoom" bounds="map.bounds">
+        <ui-gmap-markers models="map_markers" coords="'self'" icon="'icon'">
+        <ui-gmap-rectangle data-ng-repeat="rectangle in rectangles" bounds="rectangle" fill="'#FFFFFF .5'"></ui-gmap-rectangle>
+      </ui-gmap-google-map>
     </div>
   </p>
   <h4>Karma</h4>

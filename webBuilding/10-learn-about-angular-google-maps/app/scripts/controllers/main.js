@@ -8,6 +8,15 @@
  * Controller of the demoAngularGoogleMap2App
  */
 angular.module('demoAngularGoogleMap2App')
+
+  .config(['uiGmapGoogleMapApiProvider', function (uiGmapGoogleMapApi) {
+    uiGmapGoogleMapApi.configure({
+      // key: 'your api key',
+      // v: '3.20',
+      libraries: 'weather,geometry,visualization'
+    });
+  }])
+
   .controller('MainCtrl', function ($scope, uiGmapGoogleMapApi) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
@@ -16,13 +25,16 @@ angular.module('demoAngularGoogleMap2App')
     ];
 
     // Define variables for our Map object
-    var areaLatitude = 25,
-      areaLongitude  = -999,
-      areaZoom       = 8;
+    var areaLatitude = 55,
+      areaLongitude  = -100,
+      areaZoom       = 1;
 
     uiGmapGoogleMapApi.then(function(maps) {
       $scope.map     = { center: { latitude: areaLatitude, longitude: areaLongitude }, zoom: areaZoom, bounds: {} };
       $scope.options = { scrollwheel: true };
+
+      $scope.rectangles = [];
+      $scope.mapApi = maps;
     });
 
     var getMarker = function(bounds, idKey) {
@@ -32,8 +44,8 @@ angular.module('demoAngularGoogleMap2App')
         idKey = "id";
       }
 
-    
-      for (var i = 0; i < 50; i++) {
+
+      for (var i = 0; i < 10; i++) {
           var lat_min   = bounds.southwest.latitude,
               lat_range = bounds.northeast.latitude - lat_min,
               lng_min   = bounds.southwest.longitude,
@@ -49,8 +61,12 @@ angular.module('demoAngularGoogleMap2App')
          ret[idKey] = i;
          markers.push(ret);
       }
-      console.log(bounds);
-    
+
+      // Rectangles
+      $scope.rectangles.push(new $scope.mapApi.LatLngBounds(new $scope.mapApi.LatLng(55,-100), new $scope.mapApi.LatLng(49,-78)));
+      $scope.rectangles.push(new $scope.mapApi.LatLngBounds(new $scope.mapApi.LatLng(50,-80), new $scope.mapApi.LatLng(44,-77)));
+
+      console.log(JSON.stringify($scope.boundz, null, 4));
       return markers;
     };
 
