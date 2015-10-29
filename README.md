@@ -1,18 +1,25 @@
-# 2147483647_story_ptr_project
-The aim of this project is to teach myself something new on every single spare time!
-
-Why?
-As a passionate software developer developing mainly on backend software applications, I want to branch out my knowledge and explore new areas which I thought will be interesting!
+# The 2147483647 Story Point Project
+====
+The aim of this project is to <br>
+<ul>
+<li>Teach myself something <b>new</b> on every single spare time!</li>
+<li>Use this frankenstein laboratory to test out new technologies and framework</li>
+<li>Store valueable code in here for my personal reference during work.</li>
+<li>Use relevant code as examples for my stackoverflow answers to people who needs help</li>
+</ul>
 
 Definition of done?
-Keep learning, keep coding and explore new areas in software development until I finally finish this giantic max 32 bit integer worth of story points!!
+====
+KKKs -> Keep learning; Keep coding -> And Keep exploring new technologies! Until the day I stop.... errr... ok, you should know...
 
 
-Current interest:
+My current interest:
+===
 Building responsive web application,
 NoSQL database - particularly mongodb.
 Json
 
 Potential area that are worth exploring:
+====
 Mobile app development (ios, android)
 
