@@ -27,7 +27,7 @@ angular.module('demoAngularGoogleMap2App')
     // Define variables for our Map object
     var areaLatitude = 55,
       areaLongitude  = -100,
-      areaZoom       = 1;
+      areaZoom       = 5;
 
     uiGmapGoogleMapApi.then(function(maps) {
       $scope.map     = { center: { latitude: areaLatitude, longitude: areaLongitude }, zoom: areaZoom, bounds: {} };
@@ -45,20 +45,13 @@ angular.module('demoAngularGoogleMap2App')
       }
 
 
-      for (var i = 0; i < 10; i++) {
-          var lat_min   = bounds.southwest.latitude,
-              lat_range = bounds.northeast.latitude - lat_min,
-              lng_min   = bounds.southwest.longitude,
-              lng_range = bounds.northeast.longitude - lng_min;
-
-          var latitude = lat_min + (Math.random() * lat_range);
-          var longitude = lng_min + (Math.random() * lng_range);
+      for (var i = 0; i < 2; i++) {
           var ret = {
-              latitude: latitude,
-              longitude: longitude,
+              id: i,
+              latitude: 55 - i * 2,
+              longitude: -100 - i * 0.0001,
               title: 'm' + i
             };
-         ret[idKey] = i;
          markers.push(ret);
       }
 
