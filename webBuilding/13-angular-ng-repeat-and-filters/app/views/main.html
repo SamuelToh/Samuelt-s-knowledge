@@ -1,0 +1,43 @@
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<div class="row marketing">
+  <h4>HTML5 Boilerplate</h4>
+  <p>
+    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+  </p>
+
+  <h4>Angular</h4>
+  <p>
+    AngularJS is a toolset for building the framework most suited to your application development.
+  </p>
+  <hr>
+  <h4 ng-app"angularNgRepeatAndFilter"ng-repeat and filter demo</h4>
+  <p>
+  <h2>DEMO - ng-repeat AND angular filters</h2>
+  <hr>
+    <div ng-controller="MainCtrl as avengersCtrl">
+        <p>Type in something to perform search!</p>
+        <b>Search:</b> <input type="text" ng-model="search.$">
+        <p/>
+        <table class="CSSTableGenerator">
+          <tr>
+            <th>Actor Name</th>
+            <th>Character</th>
+          </tr>
+          <tr ng-repeat="actor in avengersCtrl.Avengers.cast | filter:search">
+              <td>{{actor.name}}</td>
+              <td>{{actor.character}}</td>
+          </tr>
+        </table>
+    </div>
+  </p>
+  <h4>Karma</h4>
+  <p>Spectacular Test Runner for JavaScript.</p>
+</div>
