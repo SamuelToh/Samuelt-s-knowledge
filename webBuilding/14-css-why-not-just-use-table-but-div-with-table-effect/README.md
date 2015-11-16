@@ -1,4 +1,4 @@
-## <div\> VS <table\> - Why not <table\> as HTML layout? ##
+## \<div\> VS \<table\> - Why should we not use \<table\> as HTML layout? ##
 In layman's term a HTML table tag and a div tag, styled as a table using the "display:table" css, are no different in anyway but they each have a different purpose.
 <p>
 Table is designed to hold presentation whereas a div equipped with table-like styling are for giving structure to a web page. Since table and the table-styled div element are the same implementation why can't table be used for giving structure to web page? Obviously it can but there are disadvantages.
