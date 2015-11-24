@@ -1,0 +1,73 @@
+Angular structure
+------------------
+Model
+View
+Controller (MVC - franework) 
+
+
+
+[ ng-app (Application) -> Top node ]  ====== TYPICALLY ATTACHES TO =======> <html ng-app="angularApp name />" // Stores the controllers
+
+    |||      |||
+    |||      |||
+    |||      |||
+    |||      -------> 
+    |||      -------> [ ng-controller ]   ======== TYPICALLY ATTACHES TO A TAG THAT DESCRIBES START OF A SECTION ===> 
+    |||      ------->                                  <body ng-controller="NAME_OF_CONTROLLER as myController"/> or <div> * Basically a section of html tags to be governed within the controll'er boundary 
+    |||                     |||
+    |||                     ||| 
+    |||                     ||| * Has plenty of variables and each of them can be bined to an attribute or html tag. Example below is the use of ng-model for binding/attaching to input/select/textarea HTML tags/
+    |||                     |||
+    |||                     ---------->
+    |||                     ----------> [ ng-model ]    ========= TYPICALLY ATTACHES TO HTML TAGS ===> <input ng-model="myController.variableNameXXX" /> 
+    |||                     ----------> 
+    |||                                     |||
+    |||                                     |||
+    |||                                     |||
+    |||                                     |||
+    |||                                     |||
+    |||                                     ------------>
+    |||                                     ------------> ng directives that modifies attribute like => [ ng-class ]  // Changes the css class of a HTML tag on the fly
+    |||                                     ------------>
+    |||
+    |||
+    |||
+    -------->
+    --------> custom directives // Can be used to override a normal HTML tag like div, can add customize attributes.
+    --------> 
+              var app = angular.module("superhero", [])
+
+              app.directive("superman", function() {
+                  return {
+                      restrict: "A" // read angular doc for more info on what each special characters do
+                      link: function() {
+                          alert("Hello World");
+                      }
+                  }
+              });
+
+
+Rule of thumb:
+==============
+
+Prior to AngularJS 1.15, variables for the HTML bindings are typically assigned to the $scope magic variable.
+Like <div> {{variableABC}} </div> and in the controller u will have controllerXXX, function() { $scope.variableABC = "HelloWorld"; }
+
+One should avoid doing the above as much as possible and instead let the controller variables take over the role for binding to the HTML. 
+This means that instead of having $scope.VariableABC we should do  controller, function() { this.variableABC = true } | then on the HTML site ng-controller="MyController as controllerXX" 
+Then, <div> {{controllerXX.variableABC }} </div> 
+
+By doing so we can also achieve inheritance, which cant be achieved by using $scope.
+
+Look @ this example:
+
+<div ng-app="app" ng-controller="RoomCtrl as room">
+  <div>
+    {{room.titleName}}
+
+    <div ng-controller="otherController as other">
+        {{room.foo}}
+        {{other.foo}}                     <!-- <<< both foos will be different value due to inheritance --->
+    </div>
+  </div>
+</div>
