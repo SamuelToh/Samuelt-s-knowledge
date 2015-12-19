@@ -3,4 +3,4 @@ install_dependencies:
 	pip install beautifulsoup4
 
 demo:
-	python main.py
+	python main.py > demo_output

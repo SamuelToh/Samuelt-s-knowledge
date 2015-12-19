@@ -1,345 +1,512 @@
 Executing web scrapper...
+Cannot parse event div content:<div class="monthLeft avenirHeavy" style="margin-bottom:14px;margin-top:8px;">NOVEMBER '15</div>
+Cannot parse event div content:<div class="gig">
+<div class="dateDark avenirHeavy">
+<div class="day">
+SATURDAY
+</div>
+<div class="number">
+ 7
+</div>
+<div style="clear: both"></div>
+</div>
+<div class="text Dark avenirMedium">
+<div class="name">
+<a href="/gig/486417">Sunburn Campus, </a>
+<br/>
+</div>
+<div class="records">
+<a href="/venue/DC School of Management &amp; Technology">DC School of Management &amp; Technology, </a>
+<a href="/city/Kerala">Kerala, </a>
+<a href="/country/India">India</a>
+</div>
+<div class="desc">
+</div>
+</div>
+<div style="clear: both"></div>
+<div style="margin-top:2px;"></div>
+</div>
+Cannot parse event div content:<div class="dateDark avenirHeavy">
+<div class="day">
+SATURDAY
+</div>
+<div class="number">
+ 7
+</div>
+<div style="clear: both"></div>
+</div>
+Cannot parse event div content:<div class="day">
+SATURDAY
+</div>
+NOVEMBER '15  7
+Cannot parse event div content:<div style="clear: both"></div>
 NOVEMBER '15  7
 NOVEMBER '15  7
 NOVEMBER '15  7
 NOVEMBER '15  7
-NOVEMBER '15  7
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 OCTOBER '15  7
 OCTOBER '15  7
 OCTOBER '15  7
 OCTOBER '15 THURSDAY 7
 OCTOBER '15 THURSDAY 1
+Cannot parse event div content:<div style="clear: both"></div>
 OCTOBER '15  1
 OCTOBER '15  1
 OCTOBER '15  1
 OCTOBER '15  1
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 SEPTEMBER '15  1
 SEPTEMBER '15  1
 SEPTEMBER '15  1
 SEPTEMBER '15 MONDAY 1
 SEPTEMBER '15 MONDAY 21
+Cannot parse event div content:<div style="clear: both"></div>
 SEPTEMBER '15  21
 SEPTEMBER '15  21
 SEPTEMBER '15  21
 SEPTEMBER '15  21
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 SEPTEMBER '15  21
 SEPTEMBER '15  21
 SEPTEMBER '15 SATURDAY 21
 SEPTEMBER '15 SATURDAY 19
+Cannot parse event div content:<div style="clear: both"></div>
 SEPTEMBER '15  19
 SEPTEMBER '15  19
 SEPTEMBER '15  19
 SEPTEMBER '15  19
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 SEPTEMBER '15  19
 SEPTEMBER '15  19
 SEPTEMBER '15 THURSDAY 19
 SEPTEMBER '15 THURSDAY 17
+Cannot parse event div content:<div style="clear: both"></div>
 SEPTEMBER '15  17
 SEPTEMBER '15  17
 SEPTEMBER '15  17
 SEPTEMBER '15  17
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 SEPTEMBER '15  17
 SEPTEMBER '15  17
 SEPTEMBER '15 FRIDAY 17
 SEPTEMBER '15 FRIDAY 11
+Cannot parse event div content:<div style="clear: both"></div>
 SEPTEMBER '15  11
 SEPTEMBER '15  11
 SEPTEMBER '15  11
 SEPTEMBER '15  11
+Cannot parse event div content:<div style="clear: both"></div>
 SEPTEMBER '15  11
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 SEPTEMBER '15  11
 SEPTEMBER '15  11
 SEPTEMBER '15 MONDAY 11
 SEPTEMBER '15 MONDAY 7
+Cannot parse event div content:<div style="clear: both"></div>
 SEPTEMBER '15  7
 SEPTEMBER '15  7
 SEPTEMBER '15  7
 SEPTEMBER '15  7
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 SEPTEMBER '15  7
 SEPTEMBER '15  7
 SEPTEMBER '15 THURSDAY 7
 SEPTEMBER '15 THURSDAY 3
+Cannot parse event div content:<div style="clear: both"></div>
 SEPTEMBER '15  3
 SEPTEMBER '15  3
 SEPTEMBER '15  3
 SEPTEMBER '15  3
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 AUGUST '15  3
 AUGUST '15  3
 AUGUST '15  3
 AUGUST '15 FRIDAY 3
 AUGUST '15 FRIDAY 28
+Cannot parse event div content:<div style="clear: both"></div>
 AUGUST '15  28
 AUGUST '15  28
 AUGUST '15  28
 AUGUST '15  28
+Cannot parse event div content:<div style="clear: both"></div>
 AUGUST '15  28
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 AUGUST '15  28
 AUGUST '15  28
 AUGUST '15 MONDAY 28
 AUGUST '15 MONDAY 24
+Cannot parse event div content:<div style="clear: both"></div>
 AUGUST '15  24
 AUGUST '15  24
 AUGUST '15  24
 AUGUST '15  24
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 AUGUST '15  24
 AUGUST '15  24
 AUGUST '15 SUNDAY 24
 AUGUST '15 SUNDAY 23
+Cannot parse event div content:<div style="clear: both"></div>
 AUGUST '15  23
 AUGUST '15  23
 AUGUST '15  23
 AUGUST '15  23
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 AUGUST '15  23
 AUGUST '15  23
 AUGUST '15 THURSDAY 23
 AUGUST '15 THURSDAY 20
+Cannot parse event div content:<div style="clear: both"></div>
 AUGUST '15  20
 AUGUST '15  20
 AUGUST '15  20
 AUGUST '15  20
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 AUGUST '15  20
 AUGUST '15  20
 AUGUST '15 MONDAY 20
 AUGUST '15 MONDAY 17
+Cannot parse event div content:<div style="clear: both"></div>
 AUGUST '15  17
 AUGUST '15  17
 AUGUST '15  17
 AUGUST '15  17
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 AUGUST '15  17
 AUGUST '15  17
 AUGUST '15 FRIDAY 17
 AUGUST '15 FRIDAY 14
+Cannot parse event div content:<div style="clear: both"></div>
 AUGUST '15  14
 AUGUST '15  14
 AUGUST '15  14
 AUGUST '15  14
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 AUGUST '15  14
 AUGUST '15  14
 AUGUST '15 SUNDAY 14
 AUGUST '15 SUNDAY 9
+Cannot parse event div content:<div style="clear: both"></div>
 AUGUST '15  9
 AUGUST '15  9
 AUGUST '15  9
 AUGUST '15  9
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 AUGUST '15  9
 AUGUST '15  9
 AUGUST '15 SATURDAY 9
 AUGUST '15 SATURDAY 1
+Cannot parse event div content:<div style="clear: both"></div>
 AUGUST '15  1
 AUGUST '15  1
 AUGUST '15  1
 AUGUST '15  1
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 JULY '15  1
 JULY '15  1
 JULY '15  1
 JULY '15 FRIDAY 1
 JULY '15 FRIDAY 31
+Cannot parse event div content:<div style="clear: both"></div>
 JULY '15  31
 JULY '15  31
 JULY '15  31
 JULY '15  31
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 JULY '15  31
 JULY '15  31
 JULY '15 MONDAY 31
 JULY '15 MONDAY 27
+Cannot parse event div content:<div style="clear: both"></div>
 JULY '15  27
 JULY '15  27
 JULY '15  27
 JULY '15  27
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 JULY '15  27
 JULY '15  27
 JULY '15 SATURDAY 27
 JULY '15 SATURDAY 25
+Cannot parse event div content:<div style="clear: both"></div>
 JULY '15  25
 JULY '15  25
 JULY '15  25
 JULY '15  25
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 JULY '15  25
 JULY '15  25
 JULY '15 FRIDAY 25
 JULY '15 FRIDAY 17
+Cannot parse event div content:<div style="clear: both"></div>
 JULY '15  17
 JULY '15  17
 JULY '15  17
 JULY '15  17
+Cannot parse event div content:<div style="clear: both"></div>
 JULY '15  17
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 JULY '15  17
 JULY '15  17
 JULY '15 THURSDAY 17
 JULY '15 THURSDAY 16
+Cannot parse event div content:<div style="clear: both"></div>
 JULY '15  16
 JULY '15  16
 JULY '15  16
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 JULY '15  16
 JULY '15  16
 JULY '15 MONDAY 16
 JULY '15 MONDAY 13
+Cannot parse event div content:<div style="clear: both"></div>
 JULY '15  13
 JULY '15  13
 JULY '15  13
 JULY '15  13
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 JULY '15  13
 JULY '15  13
 JULY '15 SUNDAY 13
 JULY '15 SUNDAY 12
+Cannot parse event div content:<div style="clear: both"></div>
 JULY '15  12
 JULY '15  12
 JULY '15  12
 JULY '15  12
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 JULY '15  12
 JULY '15  12
 JULY '15 FRIDAY 12
 JULY '15 FRIDAY 10
+Cannot parse event div content:<div style="clear: both"></div>
 JULY '15  10
 JULY '15  10
 JULY '15  10
 JULY '15  10
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 JULY '15  10
 JULY '15  10
 JULY '15 THURSDAY 10
 JULY '15 THURSDAY 9
+Cannot parse event div content:<div style="clear: both"></div>
 JULY '15  9
 JULY '15  9
 JULY '15  9
 JULY '15  9
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 JUNE '15  9
 JUNE '15  9
 JUNE '15  9
 JUNE '15 MONDAY 9
 JUNE '15 MONDAY 29
+Cannot parse event div content:<div style="clear: both"></div>
 JUNE '15  29
 JUNE '15  29
 JUNE '15  29
 JUNE '15  29
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 JUNE '15  29
 JUNE '15  29
 JUNE '15 FRIDAY 29
 JUNE '15 FRIDAY 26
+Cannot parse event div content:<div style="clear: both"></div>
 JUNE '15  26
 JUNE '15  26
 JUNE '15  26
 JUNE '15  26
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 JUNE '15  26
 JUNE '15  26
 JUNE '15 MONDAY 26
 JUNE '15 MONDAY 15
+Cannot parse event div content:<div style="clear: both"></div>
 JUNE '15  15
 JUNE '15  15
 JUNE '15  15
 JUNE '15  15
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 JUNE '15  15
 JUNE '15  15
 JUNE '15 SATURDAY 15
 JUNE '15 SATURDAY 13
+Cannot parse event div content:<div style="clear: both"></div>
 JUNE '15  13
 JUNE '15  13
 JUNE '15  13
 JUNE '15  13
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 JUNE '15  13
 JUNE '15  13
 JUNE '15 THURSDAY 13
 JUNE '15 THURSDAY 11
+Cannot parse event div content:<div style="clear: both"></div>
 JUNE '15  11
 JUNE '15  11
 JUNE '15  11
 JUNE '15  11
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 JUNE '15  11
 JUNE '15  11
 JUNE '15 MONDAY 11
 JUNE '15 MONDAY 1
+Cannot parse event div content:<div style="clear: both"></div>
 JUNE '15  1
 JUNE '15  1
 JUNE '15  1
 JUNE '15  1
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 MAY '15  1
 MAY '15  1
 MAY '15  1
 MAY '15 THURSDAY 1
 MAY '15 THURSDAY 28
+Cannot parse event div content:<div style="clear: both"></div>
 MAY '15  28
 MAY '15  28
 MAY '15  28
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 MAY '15  28
 MAY '15  28
 MAY '15 MONDAY 28
 MAY '15 MONDAY 25
+Cannot parse event div content:<div style="clear: both"></div>
 MAY '15  25
 MAY '15  25
 MAY '15  25
 MAY '15  25
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 MAY '15  25
 MAY '15  25
 MAY '15 SATURDAY 25
 MAY '15 SATURDAY 23
+Cannot parse event div content:<div style="clear: both"></div>
 MAY '15  23
 MAY '15  23
 MAY '15  23
 MAY '15  23
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 MAY '15  23
 MAY '15  23
 MAY '15 SATURDAY 23
 MAY '15 SATURDAY 9
+Cannot parse event div content:<div style="clear: both"></div>
 MAY '15  9
 MAY '15  9
 MAY '15  9
 MAY '15  9
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 MAY '15  9
 MAY '15  9
 MAY '15 FRIDAY 9
 MAY '15 FRIDAY 1
+Cannot parse event div content:<div style="clear: both"></div>
 MAY '15  1
 MAY '15  1
 MAY '15  1
 MAY '15  1
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 APRIL '15  1
 APRIL '15  1
 APRIL '15  1
 APRIL '15 SATURDAY 1
 APRIL '15 SATURDAY 25
+Cannot parse event div content:<div style="clear: both"></div>
 APRIL '15  25
 APRIL '15  25
 APRIL '15  25
 APRIL '15  25
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 APRIL '15  25
 APRIL '15  25
 APRIL '15 FRIDAY 25
 APRIL '15 FRIDAY 24
+Cannot parse event div content:<div style="clear: both"></div>
 APRIL '15  24
 APRIL '15  24
 APRIL '15  24
 APRIL '15  24
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 APRIL '15  24
 APRIL '15  24
 APRIL '15 FRIDAY 24
 APRIL '15 FRIDAY 17
+Cannot parse event div content:<div style="clear: both"></div>
 APRIL '15  17
 APRIL '15  17
 APRIL '15  17
 APRIL '15  17
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 APRIL '15  17
 APRIL '15  17
 APRIL '15 FRIDAY 17
 APRIL '15 FRIDAY 3
+Cannot parse event div content:<div style="clear: both"></div>
 APRIL '15  3
 APRIL '15  3
 APRIL '15  3
 APRIL '15  3
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 MARCH '15  3
 MARCH '15  3
 MARCH '15  3
 MARCH '15 SATURDAY 3
 MARCH '15 SATURDAY 28
+Cannot parse event div content:<div style="clear: both"></div>
 MARCH '15  28
 MARCH '15  28
 MARCH '15  28
 MARCH '15  28
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 MARCH '15  28
 MARCH '15  28
 MARCH '15 SATURDAY 28
 MARCH '15 SATURDAY 21
+Cannot parse event div content:<div style="clear: both"></div>
 MARCH '15  21
 MARCH '15  21
 MARCH '15  21
 MARCH '15  21
-[]
+Cannot parse event div content:<div style="clear: both"></div>
+Cannot parse event div content:<div style="margin-top:2px;"></div>
 Done
