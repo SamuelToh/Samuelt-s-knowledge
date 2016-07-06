@@ -1,0 +1,3 @@
+Just experimenting with lambda...
+
+Lambda also known as anonymous function is a type of fn that is supposed to be compact (usually single line expression) and it doesn't have a name like what a typical function would have.
