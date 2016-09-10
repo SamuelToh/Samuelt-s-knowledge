@@ -1,0 +1,7 @@
+- name: Send your script to the target host
+  copy: src=script/do_stuff.sh dest=/tmp/do_stuff.sh
+- name: Execute my script on target host
+  command: >
+          /bin/bash /tmp/do_stuff.sh
+- name: Clean up the target host by removing script
+  file: path=/tmp/do_stuff.sh state=absent
