@@ -1,0 +1,5 @@
+# Use ansible-playbook on this script as the program's entry point
+- name: Run example 01-send-and-run-script-to-target-host
+  hosts: localhost
+  tasks:
+  - include: 01-send-and-run-script-to-target-host/task.yml role_path=01-send-and-run-script-to-target-host
