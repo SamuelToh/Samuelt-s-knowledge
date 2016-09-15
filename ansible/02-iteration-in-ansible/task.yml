@@ -1,0 +1,16 @@
+# ---------------------
+# Iteration in Ansible.
+# ---------------------
+#
+# This script retrieves the id of all running containers for this host and
+# shut them down.
+#
+- name: Get container id
+  command: 
+    docker ps -q 
+  register: container_ids
+
+- name: Stop containers 
+  command: 
+    "docker stop {{item}}"
+  with_items: "{{container_ids.stdout_lines}}"

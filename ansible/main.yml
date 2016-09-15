@@ -2,4 +2,10 @@
 - name: Run example 01-send-and-run-script-to-target-host
   hosts: localhost
   tasks:
-  - include: 01-send-and-run-script-to-target-host/task.yml role_path=01-send-and-run-script-to-target-host
+    - include: 01-send-and-run-script-to-target-host/task.yml role_path=01-send-and-run-script-to-target-host
+
+- name: Run example 02-iteration-in-ansible (Shut down all docker containers on localhost)
+  hosts: localhost
+  tasks:
+    - include: 02-iteration-in-ansible/task.yml
+
