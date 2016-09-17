@@ -9,3 +9,8 @@
   tasks:
     - include: 02-iteration-in-ansible/task.yml
 
+- name: Print system information
+  hosts: localhost
+  tasks:
+    - include: 03-get-system-info-through-ansible/task.yml
+

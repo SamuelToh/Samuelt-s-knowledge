@@ -1,0 +1,6 @@
+- name: The -m setup option has a treasure of information about your system.
+  command: ansible localhost -m setup
+  register: host_information
+
+- name: print what is available to use. Note, Each key is a callable keyword in ansible e.g. {{ansible_distribution_release}}
+  debug: var=host_information
