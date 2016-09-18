@@ -14,3 +14,8 @@
   tasks:
     - include: 03-get-system-info-through-ansible/task.yml
 
+# Requires root access.
+- name: Run example 04-install-debian-package-thru-dpkg
+  hosts: localhost
+  tasks:
+    - include: 04-install-debian-package-thru-dpkg/task.yml docker_version=1.12.1-0

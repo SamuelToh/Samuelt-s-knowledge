@@ -1,0 +1,8 @@
+# This task requires root access
+# Example - how you can install a debian package through an external source
+- name: Installing docker from debian package.
+  apt: deb="https://apt.dockerproject.org/repo/pool/main/d/docker-engine/docker-engine_{{docker_version}}~{{ansible_distribution_release}}_amd64.deb" force=yes
+  register: docker_install
+
+- name: Fix dependencies
+  command: apt-get -f install warn=no
