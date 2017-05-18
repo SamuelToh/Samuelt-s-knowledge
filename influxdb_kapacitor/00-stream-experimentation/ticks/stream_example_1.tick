@@ -1,0 +1,23 @@
+var stream_data1 = 
+  stream
+      |from()
+          .database('historian')
+          .retentionPolicy('autogen')
+          .measurement('measurement_100')
+      |window()
+          .period(5s)
+          .every(10s)
+      |log()
+          .prefix('Data ONE:')
+
+var stream_data2 = 
+  stream
+      |from()
+          .database('historian')
+          .retentionPolicy('autogen')
+          .measurement('measurement_105')
+      |window()
+          .period(5s)
+          .every(10s)
+      |log()
+          .prefix('Data TWO:')
