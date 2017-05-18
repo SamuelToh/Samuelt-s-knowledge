@@ -25,6 +25,9 @@ Do `make test` now, if you are running the job first time. Otherwise you will ha
 
 Wait for a bit, the target should takes about 20 seconds to run. Once its down head to `/var/log/kapacitor/` and inspect the .log file produced by the stream job. You should see some JSON output which consists of data values produced by the data generator script.
 
+# Output
+In case you're lazy to run any of those steps. We have got a pre-baked output ready for view in the `example_output` directories. This is essentially what you'll see from the kapacitor log file upon running the scripts.
+
    [here]: <https://docs.influxdata.com/kapacitor/v1.2/examples/continuous_queries/#when-should-we-use-stream-tasks-vs-batch-tasks-in-kapacitor>
    [nodejs]: https://nodejs.org/en/download/
    [influxdb]: https://docs.influxdata.com/influxdb/v1.2/introduction/installation/
