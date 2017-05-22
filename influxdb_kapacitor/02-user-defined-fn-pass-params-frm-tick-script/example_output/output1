@@ -1,0 +1,5 @@
+[udf_example_1:holiday2] 2017/05/22 10:34:23 I!P 2017-05-22 10:34:23,069 INFO:root: STOH: Starting UDF as part of kapacitor's sub process through kapaictor.Agent
+[udf_example_1:holiday2] 2017/05/22 10:34:23 I!P 2017-05-22 10:34:23,070 INFO:root: STOH: Initializing holiday.
+[udf_example_1:holiday2] 2017/05/22 10:34:23 I!P 2017-05-22 10:34:23,070 INFO:root: STOH: option testString1 is set with value: value.
+[udf_example_1:holiday2] 2017/05/22 10:34:23 I!P 2017-05-22 10:34:23,070 INFO:root: STOH: option testString2 is set with value: value999.
+[udf_example_1:holiday2] 2017/05/22 10:34:23 I!P 2017-05-22 10:34:23,070 INFO:root: STOH: option testInteger is set with value: 50.
