@@ -38,10 +38,13 @@ In case you're lazy to run any of those steps. We have got a pre-baked output re
 
 # What just happened.
 In this experiment, I have written my UDF using python 2.7.
-When the kapacitor server gets boot up, it looks up the UDF tag in its boot config to run the UDF script or binary. Note: if you are
-not wanting Kapacitor to manage its UDF processes then your UDF script will need to support writing and listening on unix domain socket.
+
+When the kapacitor server gets boot up, it looks up the UDF tag in its boot config to run the UDF script or binary. Note: if you are not wanting Kapacitor to manage its UDF processes then your UDF script will need to support writing and listening on unix domain socket.
+
 Then in the Kapacitor config, you'll need to specify that by using the 'sock' keyword. More on this in other tutorial.
+
 Once the UDF is up running, the ultimate goal here is to show case that for each point data received by our tick script. 
+
 The data gets pushed into the udf script, and this can be evidently observed by the /var/log/kapacitor/kapacitor log file as
 log messages with the "STOH" prefix is written by the logger object started by our UDF python script.  
 
