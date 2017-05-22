@@ -1,0 +1,11 @@
+var stream_data1 = 
+  stream
+      |from()
+          .database('historian')
+          .retentionPolicy('autogen')
+          .measurement('measurement_100')
+      @udfTest()
+      |log()
+          .prefix('UDF DEMO:')
+
+

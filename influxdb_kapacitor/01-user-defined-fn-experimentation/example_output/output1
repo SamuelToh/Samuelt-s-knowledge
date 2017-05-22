@@ -1,0 +1,14 @@
+[udf_example_1:holiday2] 2017/05/22 10:53:27 I!P 2017-05-22 10:53:27,721 INFO:root: STOH: A point has arrived:
+[udf_example_1:holiday2] 2017/05/22 10:53:27 I!P time: 1495414408686824230
+[udf_example_1:holiday2] 2017/05/22 10:53:27 I!P name: "measurement_100"
+[udf_example_1:holiday2] 2017/05/22 10:53:27 I!P database: "historian"
+[udf_example_1:holiday2] 2017/05/22 10:53:27 I!P retentionPolicy: "autogen"
+[udf_example_1:holiday2] 2017/05/22 10:53:27 I!P tags {
+[udf_example_1:holiday2] 2017/05/22 10:53:27 I!P   key: "ID"
+[udf_example_1:holiday2] 2017/05/22 10:53:27 I!P   value: "DATA_SET_111"
+[udf_example_1:holiday2] 2017/05/22 10:53:27 I!P }
+[udf_example_1:holiday2] 2017/05/22 10:53:27 I!P fieldsDouble {
+[udf_example_1:holiday2] 2017/05/22 10:53:27 I!P   key: "value"
+[udf_example_1:holiday2] 2017/05/22 10:53:27 I!P   value: 999.0
+[udf_example_1:holiday2] 2017/05/22 10:53:27 I!P }
+[udf_example_1:holiday2] 2017/05/22 10:53:27 I!P .
