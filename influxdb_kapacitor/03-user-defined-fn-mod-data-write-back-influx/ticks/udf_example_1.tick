@@ -1,0 +1,19 @@
+var stream_data1 = 
+  stream
+      |from()
+          .database('historian')
+          .retentionPolicy('autogen')
+          .measurement('measurement_100')
+      @holiday()
+          .testString1('value')
+          .testString2('value999')
+          .testInteger(50)
+
+stream_data1
+      |influxDBOut()
+          .database('historian')
+          .retentionPolicy('autogen')
+          .precision('ms')
+          .measurement('test_001')
+
+
