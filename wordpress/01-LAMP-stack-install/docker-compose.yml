@@ -1,0 +1,44 @@
+# LAMP stack consists of
+# 1) Linux
+# 2) Apache
+# 3) MySQL
+# 4) PhP
+version: '2'
+
+volumes:
+  mysql2data: {}
+
+
+services:
+
+  # Essentially linux, php and apache
+  wordpress:
+    image: wordpress
+    ports:
+      - 5555:80
+    environment:
+      - WORDPRESS_DB_HOST=mysql2
+      - WORDPRESS_DB_PASSWORD=12qwaszx
+    links:
+      - mysql2
+
+  # MySQL
+  mysql2:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=12qwaszx
+    volumes:
+      - mysql2data:/var/lib/stoh_mysql/data
+
+  # A tool for viewing databases
+  # UI @ localhost:8080
+  # Server   = mysql2
+  # Username = root
+  # password = 12qwaszx
+  adminer:
+     image: adminer
+     ports:
+       - 8080:8080
+     links:
+       - mysql2
+
