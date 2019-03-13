@@ -22,3 +22,8 @@ Easy.
 
 `go fmt gofile.go`
 
+Alternatively;
+
+`go fmt ./...`
+
+Means from current directory plus recursively scan all child/grand-child, etc.., apply `fmt` to all found files
