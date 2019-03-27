@@ -11,7 +11,7 @@ In this blog post we discuss about email's delivery rate, main focus would be ho
 
 I want to send out emails.
 
-I want my audience to be able to receive them.
+I want my audience to receive them.
 
 ## Solution
 
