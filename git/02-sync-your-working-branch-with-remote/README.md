@@ -16,12 +16,16 @@ If you are sync'ing against the remote master branch then you'll have to fetch i
 
 `git remote add upstream {URL} master` 
 
-To tell `git` where you're intending to sync against. If scenario where it is just your own project then you can
+To tell `git` where you're intending to sync against. In scenario where it is just your own project then you can
 skip this step.
 
-Then;
+Once you have added the new remote source, the next thing to do would be to fetch the latest commit information from it.
 
-`git rebase upstream/master`. 
+`git fetch upstream master`
+
+Then you can ask `git` to rebase (sync) with your target ;
+
+`git rebase upstream/master` 
 
 Update the `master` value according to the name of branch you're syncing against with.
 In scenario where you're just syncing with your own repository then upstream will be `origin` means the "Original" source.
