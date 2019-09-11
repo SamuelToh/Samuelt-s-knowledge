@@ -1,5 +1,12 @@
 Emoji currently recognized by Bitbucket:
 
+To use them pick 1 of the emoji and append the : char to
+the suffix and prefix of the choisen item.
+
+E.g. I want to use 'ab' emoji then it would be :ab:
+
+- git commit "use emoji :ab:"
+
 :+1: +1
 :-1: -1
 💯 100
